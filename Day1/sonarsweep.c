@@ -27,9 +27,8 @@ int main(){
     printf("Increases: %d\n", answer1);
 
     int sumData[2048];
-    for(int i = 0; i < counter; i++)
-        if(i < counter - 2)
-            sumData[i] = data[i] + data[i+1] + data[i+2];
+    for(int i = 0; i < counter - 2; i++)
+        sumData[i] = data[i] + data[i+1] + data[i+2];
 
     int answer2 = increaseFinder(sumData, counter);
     printf("Sum Increases: %d\n", answer2);

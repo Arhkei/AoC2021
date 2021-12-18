@@ -19,9 +19,8 @@ print(f"Increases: {answer1}")
 
 sumData = []
 
-for x in range(len(data)):
-    if x < len(data) - 2:
-        sumData += [data[x] + data[x+1] + data[x+2]]
+for x in range(len(data) - 2):
+    sumData += [data[x] + data[x+1] + data[x+2]]
 
 answer2 = increaseFinder(sumData)
 
